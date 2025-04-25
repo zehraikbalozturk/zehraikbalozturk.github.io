@@ -50,24 +50,65 @@ body {
         padding: 20px;
     }
     .hero-banner {
-        background-color: #002147;
-        color: white;
+        background: linear-gradient(120deg, #002147, #003366);
+        color: #fff;
+        padding: 80px 20px;
         text-align: center;
-        padding: 60px 20px;
-        border-bottom: 5px solid #1a1a1a;
     }
     
     .hero-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         margin: 0;
-        font-weight: bold;
+        font-weight: 700;
+        animation: fadeInDown 1s ease-out;
     }
     
     .hero-content p {
         font-size: 1.2rem;
         margin-top: 10px;
-        font-weight: 300;
+        animation: fadeInUp 1.2s ease-out;
     }
     
+    .cv-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #ffcc00;
+        color: #002147;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s ease;
+    }
+    
+    .cv-button:hover {
+        background-color: #ffd633;
+        transform: scale(1.05);
+    }
+    
+    /* Animasyon */
+    @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .wave {
+        animation: waveAnim 2s infinite;
+        display: inline-block;
+    }
+    
+    @keyframes waveAnim {
+        0% { transform: rotate(0deg); }
+        20% { transform: rotate(14deg); }
+        40% { transform: rotate(-8deg); }
+        60% { transform: rotate(14deg); }
+        80% { transform: rotate(-4deg); }
+        100% { transform: rotate(0deg); }
+    }
     
     
