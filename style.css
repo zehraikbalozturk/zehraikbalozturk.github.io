@@ -61,4 +61,24 @@ body {
         text-align: center;
         padding: 20px;
     }
+    .hero-banner {
+        background-color: #002147;
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+        border-bottom: 5px solid #1a1a1a;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.8rem;
+        margin: 0;
+        font-weight: bold;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+    
     
